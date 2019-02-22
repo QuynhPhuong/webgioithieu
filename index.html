@@ -15,428 +15,177 @@
                
     </head>
     <body>
-        <header>
-            <div class="head__top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="head__top--inner">
-                                <div class="leftInfo">
-                                    <span class="top-hotline"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:0363131815">0363131815</a></span>
-                                    <span class="top-email"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto: lephuongquynh96@gmail.com">lephuongquynh96@gmail.com</a></span>
-                                </div>
-                                <div class="rightInfo">
-                                    <span class="top-hotline"><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">Số 17 Phùng Khoang 2, Nam Từ Liêm, Hà Nội</a></span>
-                                </div>
+        <div class="head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="head__inner">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="img/logovh.png" alt="Fashion" />
+                                </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="head__logo">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="head__logo--inner">
-                                <div class="head__col--logo">
-                                        <h1>
-                                            <div class="logo">
-                                                <a href="/">
-                                                    <img src="img/logo.png" />
-                                                </a>
-                                            </div>
-                                        </h1>
-                                    <a id="menuMobile">
-                                        <i class="fa fa-bars" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                                <div class="head__col--form">
-                                    <div class="search-box">
-                                        <div class="search-form">
-
-                                            <form id="search" action="/search" method="get">
-                                                <input type="text" name="q" placeholder="Tìm kiếm ..."/>
-                                                <a href="javascript:{}" onclick="document.getElementById('search').submit();"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                                <div id="searchFolding"></div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="head__col--cart">
-                                    <div class="loginRegister">
-                                        <i class="fa fa-user" aria-hidden="true"></i>
-                                        <!-- <ul class="RegisterLogin">
-                                            <li><a class="login-icon" href="#">Phương Quỳnh</a></li>
-                                            <li><a href="/user/signout">Thoát</a></li>
-                                        </ul> -->
-                                        <ul class="RegisterLogin">
-                                            <li><a href="/user/signup">Đăng ký</a></li>
-                                            <li><a href="/user/signin">Đăng nhập</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="cart-label">
-                                        <a class="totalCart" href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>4</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="head__nav">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="nav__left">
+                            <div class="navHome">
                                 <ul>
                                     <li class="active"><a href="#">Trang chủ</a></li>
-                                    <li  class="navIsset"><a href="news/index.html">Tin tức<i class="fa fa-caret-down"></i></a>
+                                    <li><a href="news/index.html">Tin tức</a>
                                         <ul class="navHome__list">
-                                            <li class="navIsset"><a href="news/index.html">Thời trang</a>
-                                                <ul class="ul-level-3">
-                                                    <li><a href="#">Thời trang nữ</a></li>
-                                                    <li><a href="#">Thời trang nam</a></li>
-                                                    <li><a href="#">Làm đẹp</a></li>
+                                            <li><a href="#">Bất động sản</a></li>
+                                            <li><a href="#">Thời trang</a>
+                                                <ul>
+                                                    <li><a href="#">Thời trang 1</a></li>
+                                                    <li><a href="#">Thời trang 2</a></li>
+                                                    <li><a href="#">Thời trang 3</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">Ẩm thực</a></li>
-                                            <li><a href="#">Văn hóa</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="pages/contact.html">Liên hệ</a></li>
+                                    <li><a href="pages/index.html">Giới thiệu</a></li>
+                                </ul>
+                            </div>
+                            <a class="navigation-button">Menu</a>
+                            <div class="navigation-mobile">
+                                <ul class="navigation-mobile__list">
+                                    <li><a href="#">Trang chủ</a></li>
+                                    <li><button></button><a href="news/index.html">Tin tức</a>
+                                        <ul class="nav2">
+                                            <li><a href="news/index.html">Bất động sản</a></li>
+                                            <li><button></button><a href="news/index.html">Thời trang</a>
+                                                <ul>
+                                                    <li><a href="news/index.html">Thời trang 1</a></li>
+                                                    <li><a href="news/index.html">Thời trang 2</a></li>
+                                                    <li><a href="news/index.html">Thời trang 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Ẩm thực</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="pages/contact.html">Liên hệ</a></li>
+                                    <li><a href="pages/index.html">Giới thiệu</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+
         <section class="slider">
             <ul class="banner owl-carousel owl-theme">
                 <li>
                     <a href="#">
-                        <figure class="banner-image" style="background-image: url('img/slider/slider-1.jpg')">
+                        <figure class="slider-image" style="background-image: url('img/slider/slider-1.jpg')">
                         </figure>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <figure class="banner-image" style="background-image: url('img/slider/slider-2.jpg')">
+                        <figure class="slider-image" style="background-image: url('img/slider/slider-2.jpg')">
                         </figure>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <figure class="banner-image" style="background-image: url('img/slider/slider-3.jpg')">
+                        <figure class="slider-image" style="background-image: url('img/slider/slider-3.jpg')">
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure class="slider-image" style="background-image: url('img/slider/slider-4.jpg')">
                         </figure>
                     </a>
                 </li>
             </ul>
+            <div class="shape-top gray"></div>
         </section>
-        <section class="product">
+        <section class="two-post">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="titleHome">Sản phẩm mới</h2>
-                        <ul class="product-slider owl-carousel owl-theme">
-                            <li class="product__item">
-                                <div class="product__item--inner">
-                                    <div class="tag-sale">Sale</div>
-                                    <a class="pI" href="#"><figure class="lazy image-product" data-src="img/product-1/pro-1.jpg"></figure></a>
-                                    <div>
-                                        <h3><a href="product/view.html">3CE VELVET LIP TINT #GO NOW</a></h3>
-                                        <p class="price priceOld">
-                                            <span>400.000</span>
-                                            <i>350.000</i>
-                                        </p>
-                                    </div>
-                                    <a class="btnAddCart" data-quantity="1" data-id="1">Xem ngay</a>
-                                </div>
-                            </li>
-                            <li class="product__item">
-                                <div class="product__item--inner">
-                                    <div class="tag-sale">Sale</div>
-                                    <a class="pI" href="#"><figure class="lazy image-product" data-src="img/product-2/pro-2.jpg"></figure></a>
-                                    <div>
-                                        <h3><a href="product/view.html">3CE SLIM VELVET LIP COLOR #SIMPLE STAY</a></h3>
-                                        <p class="price priceOld">
-                                            <span>500.000</span>
-                                        </p>
-                                    </div>
-                                    <a class="btnAddCart" data-quantity="1" data-id="1">Xem ngay</a>
-                                </div>
-                            </li>
-                            <li class="product__item">
-                                <div class="product__item--inner">
-                                    <div class="tag-sale">Sale</div>
-                                    <a class="pI" href="#"><figure class="lazy image-product" data-src="img/product-1/pro-1.jpg"></figure></a>
-                                    <div>
-                                        <h3><a href="product/view.html">3CE VELVET LIP TINT #GO NOW</a></h3>
-                                        <p class="price priceOld">
-                                            <span>400.000</span>
-                                            <i>350.000</i>
-                                        </p>
-                                    </div>
-                                    <a class="btnAddCart" data-quantity="1" data-id="1">Xem ngay</a>
-                                </div>
-                            </li>
-                            <li class="product__item">
-                                <div class="product__item--inner">
-                                    <div class="tag-sale">Sale</div>
-                                    <a class="pI" href="#"><figure class="lazy image-product" data-src="img/product-1/pro-1.jpg"></figure></a>
-                                    <div>
-                                        <h3><a href="product/view.html">3CE VELVET LIP TINT #GO NOW</a></h3>
-                                        <p class="price priceOld">
-                                            <span>400.000</span>
-                                            <i>350.000</i>
-                                        </p>
-                                    </div>
-                                    <a class="btnAddCart" data-quantity="1" data-id="1">Xem ngay</a>
-                                </div>
-                            </li>
-                            <li class="product__item">
-                                <div class="product__item--inner">
-                                    <div class="tag-sale">Sale</div>
-                                    <a class="pI" href="#"><figure class="lazy image-product" data-src="img/product-1/pro-1.jpg"></figure></a>
-                                    <div>
-                                        <h3><a href="product/view.html">3CE VELVET LIP TINT #GO NOW</a></h3>
-                                        <p class="price priceOld">
-                                            <span>400.000</span>
-                                            <i>350.000</i>
-                                        </p>
-                                    </div>
-                                    <a class="btnAddCart" data-quantity="1" data-id="1">Xem ngay</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="promote-image">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="promote-image__inner">
-                            <a href="#">
-                                <img src="img/promote.jpg" alt="Ảnh quảng cáo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="product-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="product-2__inner">
-                            <div class="product-2__left">
-                                <div class="product-2__left--inner" style="background-image: url('img/eyes-palette.jpg')">
-                                    <h2 class="product-2__title">Bảng mắt mới nhất</h2>
-                                    <a class="product-2__button" href="product/index.html">Xem thêm</a>
-                                </div>
+                    <div class="col-sm-12">
+                        <div class="two-post__inner">
+                            <div class="two-post__left">
+                                <figure class="lazy two-post__image" data-src="img/intro.jpg"></figure>
                             </div>
-                            <div class="product-2__right">
-                                <ul class="product-slider-2 owl-carousel owl-theme">
-                                    <li class="product__item">
-                                        <div class="product__item--inner">
-                                            <div class="tag-sale">Sale</div>
-                                            <a class="pI" href="product/view.html"><figure class="lazy image-product" data-src="img/product-3/pro-3.jpg"></figure></a>
-                                            <div>
-                                                <h3><a href="product/view.html">3CE PRO MULTI EYE COLOR PALETTE #MUSEDAY</a></h3>
-                                                <p class="price priceOld">
-                                                    <span>700.000</span>
-                                                    <i>600.000</i>
-                                                </p>
-                                            </div>
-                                            <a class="btnAddCart" data-quantity="1" data-id="2">Xem ngay</a>
-                                        </div>
-                                    </li>
-                                
-                                    <li class="product__item">
-                                        <div class="product__item--inner">
-                                            <div class="tag-sale">Sale</div>
-                                            <a class="pI" href="product/view.html"><figure class="lazy image-product" data-src="img/product-5/pro-5.jpg"></figure></a>
-                                            <div>
-                                                <h3><a href="product/view.html">3CE PRO MULTI EYE COLOR PALETTE #MUSEDAY</a></h3>
-                                                <p class="price priceOld">
-                                                    <span>700.000</span>
-                                                    <i>600.000</i>
-                                                </p>
-                                            </div>
-                                            <a class="btnAddCart" data-quantity="1" data-id="2">Xem ngay</a>
-                                        </div>
-                                    </li>
-                                    <li class="product__item">
-                                        <div class="product__item--inner">
-                                            <div class="tag-sale">Sale</div>
-                                            <a class="pI" href="product/view.html"><figure class="lazy image-product" data-src="img/product-4/pro-4.jpg"></figure></a>
-                                            <div>
-                                                <h3><a href="product/view.html">3CE PRO MULTI EYE COLOR PALETTE #MUSEDAY</a></h3>
-                                                <p class="price priceOld">
-                                                    <span>700.000</span>
-                                                    <i>600.000</i>
-                                                </p>
-                                            </div>
-                                            <a class="btnAddCart" data-quantity="1" data-id="2">Xem ngay</a>
-                                        </div>
-                                    </li>
-                                    <li class="product__item">
-                                        <div class="product__item--inner">
-                                            <div class="tag-sale">Sale</div>
-                                            <a class="pI" href="product/view.html"><figure class="lazy image-product" data-src="img/product-3/pro-3.jpg"></figure></a>
-                                            <div>
-                                                <h3><a href="product/view.html">3CE PRO MULTI EYE COLOR PALETTE #MUSEDAY</a></h3>
-                                                <p class="price">
-                                                    600.000
-                                                </p>
-                                            </div>
-                                            <a class="btnAddCart" data-quantity="1" data-id="2">Xem ngay</a>
-                                        </div>
-                                    </li>
-                                    <li class="product__item">
-                                        <div class="product__item--inner">
-                                            <div class="tag-sale">Sale</div>
-                                            <a class="pI" href="product/view.html"><figure class="lazy image-product" data-src="img/product-3/pro-3.jpg"></figure></a>
-                                            <div>
-                                                <h3><a href="product/view.html">3CE PRO MULTI EYE COLOR PALETTE #MUSEDAY</a></h3>
-                                                <p class="price priceOld">
-                                                    <span>700.000</span>
-                                                    <i>600.000</i>
-                                                </p>
-                                            </div>
-                                            <a class="btnAddCart" data-quantity="1" data-id="2">Xem ngay</a>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div class="two-post__right">
+                                <h2 class="two-post__title wp1"><span>Giới thiệu</span></h2>
+                                <div class="two-post__intro wp2">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="product">
+        <section class="feature-project">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="titleHome">Sản phẩm mới</h2>
-                        <ul class="lP">
-                            <li class="product__item">
-                                <div class="product__item--inner">
-                                    <div class="tag-sale">Sale</div>
-                                    <a class="pI" href="#"><figure class="lazy image-product" data-src="img/product-1/pro-1.jpg"></figure></a>
-                                    <div>
-                                        <h3><a href="product/view.html">3CE VELVET LIP TINT #GO NOW</a></h3>
-                                        <p class="price priceOld">
-                                            <span>400.000</span>
-                                            <i>350.000</i>
-                                        </p>
-                                    </div>
-                                    <a class="btnAddCart" data-quantity="1" data-id="1">Xem ngay</a>
-                                </div>
-                            </li>
-                            <li class="product__item">
-                                <div class="product__item--inner">
-                                    <a class="pI" href="#"><figure class="lazy image-product" data-src="img/product-2/pro-2.jpg"></figure></a>
-                                    <div>
-                                        <h3><a href="product/view.html">3CE SLIM VELVET LIP COLOR #SIMPLE STAY</a></h3>
-                                        <p class="price priceOld">
-                                            500.000
-                                        </p>
-                                    </div>
-                                    <a class="btnAddCart" data-quantity="1" data-id="1">Xem ngay</a>
-                                </div>
-                            </li>
-                            <li class="product__item">
-                                <div class="product__item--inner">
-                                    <div class="tag-sale">Sale</div>
-                                    <a class="pI" href="#"><figure class="lazy image-product" data-src="img/product-1/pro-1.jpg"></figure></a>
-                                    <div>
-                                        <h3><a href="product/view.html">3CE VELVET LIP TINT #GO NOW</a></h3>
-                                        <p class="price priceOld">
-                                            <span>400.000</span>
-                                            <i>350.000</i>
-                                        </p>
-                                    </div>
-                                    <a class="btnAddCart" data-quantity="1" data-id="1">Xem ngay</a>
-                                </div>
-                            </li>
-                            <li class="product__item">
-                                <div class="product__item--inner">
-                                    <div class="tag-sale">Sale</div>
-                                    <a class="pI" href="#"><figure class="lazy image-product" data-src="img/product-3/pro-3.jpg"></figure></a>
-                                    <div>
-                                        <h3><a href="product/view.html">3CE VELVET LIP TINT #GO NOW</a></h3>
-                                        <p class="price priceOld">
-                                            <span>400.000</span>
-                                            <i>350.000</i>
-                                        </p>
-                                    </div>
-                                    <a class="btnAddCart" data-quantity="1" data-id="1">Xem ngay</a>
-                                </div>
-                            </li>
-                            <li class="product__item">
-                                <div class="product__item--inner">
-                                    <div class="tag-sale">Sale</div>
-                                    <a class="pI" href="#"><figure class="lazy image-product" data-src="img/product-1/pro-1.jpg"></figure></a>
-                                    <div>
-                                        <h3><a href="product/view.html">3CE VELVET LIP TINT #GO NOW</a></h3>
-                                        <p class="price priceOld">
-                                            <span>400.000</span>
-                                            <i>350.000</i>
-                                        </p>
-                                    </div>
-                                    <a class="btnAddCart" data-quantity="1" data-id="1">Xem ngay
-                                </div>
-                            </li>
-                            <li class="product__item">
-                                <div class="product__item--inner">
-                                    <div class="tag-sale">Sale</div>
-                                    <a class="pI" href="#"><figure class="lazy image-product" data-src="img/product-3/pro-3.jpg"></figure></a>
-                                    <div>
-                                        <h3><a href="product/view.html">3CE VELVET LIP TINT #GO NOW</a></h3>
-                                        <p class="price priceOld">
-                                            <span>400.000</span>
-                                            <i>350.000</i>
-                                        </p>
-                                    </div>
+                        <div class="headline">
+                            <h2 class="headline-default feature-project__headline wp1"><span>
+                                Tiện ích dự án
+                            </span></h2>
+                            <div class="headline-intro"></div>
+                        </div>
+                        <div class="feature-project__inner">                        
+                            <div class="feature-project__item wp2">
+                                <a href="#">
+                                    <figure class="feature-project__image lazy" data-src="img/banner-1.jpg">
+                                        <div class="feature-project__item--info">
+                                            <h3 class="feature-product__title">Tiện ích 1</h3>
+                                            <div class="news__button">
+                                                <button class="btn-default1">Chi tiết</button>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </a>
+                            </div>
+
+                            <div class="feature-project__item--middle">
+                                <div class="feature-project__item wp3">
+
+                                    <a href="#">
+                                        <figure class="feature-project__image feature-project__image--50 lazy" data-src="img/banner-2.jpg">
+                                            <div class="feature-project__item--info">
+                                                <h3 class="feature-product__title">Tiện ích 2</h3>
+                                                <div class="news__button">
+                                                    <button class="btn-default1">Chi tiết</button>
+                                                </div>
+                                            </div>
+                                        </figure>
                                     </a>
-                                    </a>
-                                    <a class="btnAddCart" data-quantity="1" data-id="1">Xem ngay</a>
                                 </div>
-                            </li>
-                            <li class="product__item">
-                                <div class="product__item--inner">
-                                    <div class="tag-sale">Sale</div>
-                                    <a class="pI" href="#"><figure class="lazy image-product" data-src="img/product-2/pro-2.jpg"></figure></a>
-                                    <div>
-                                        <h3><a href="product/view.html">3CE VELVET LIP TINT #GO NOW</a></h3>
-                                        <p class="price priceOld">
-                                            <span>400.000</span>
-                                            <i>350.000</i>
-                                        </p>
-                                    </div>
+                                <div class="feature-project__item wp4">
+
+                                    <a href="#">
+                                        <figure class="feature-project__image feature-project__image--50 lazy" data-src="img/banner-3.jpg">
+                                            <div class="feature-project__item--info">
+                                                <h3 class="feature-product__title">Tiện ích 2</h3>
+                                                <div class="news__button">
+                                                    <button class="btn-default1">Chi tiết</button>
+                                                </div>
+                                            </div>
+                                        </figure>
                                     </a>
-                                    </a>
-                                    <a class="btnAddCart" data-quantity="1" data-id="1">Xem ngay</a>
                                 </div>
-                            </li>
-                            <li class="product__item">
-                                <div class="product__item--inner">
-                                    <div class="tag-sale">Sale</div>
-                                    <a class="pI" href="#"><figure class="lazy image-product" data-src="img/product-4/pro-4.jpg"></figure></a>
-                                    <div>
-                                        <h3><a href="product/view.html">3CE VELVET LIP TINT #GO NOW</a></h3>
-                                        <p class="price priceOld">
-                                            <span>400.000</span>
-                                            <i>350.000</i>
-                                        </p>
-                                    </div>
-                                    </a>
-                                    <a class="btnAddCart" data-quantity="1" data-id="1">Xem ngay</a>
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+
+                            <div class="feature-project__item wp5">
+                                <a href="#">
+                                    <figure class="feature-project__image lazy" data-src="img/banner-4.jpg">
+                                        <div class="feature-project__item--info">
+                                            <h3 class="feature-product__title">Tiện ích 3</h3>
+                                            <div class="news__button">
+                                                <button class="btn-default1">Chi tiết</button>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -445,172 +194,170 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="titleHome">Tin tức</h2>
-                        <ul class="news-slider owl-carousel owl-theme news__list">
-                            <li>
-                                <a href="news/view.html"><figure class="lazy image-article" data-src="img/news/news-1.jpg">
-                                        <p class="news__date">Nov 23, 2018</p>
-                                    </figure></a>
-                                <h3><a href="news/view.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
-                                <p class="news__intro">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-                                </p>
-                            </li>
-                            <li>
-                                <a href="news/view.html"><figure class="lazy image-article" data-src="img/news/news-2.jpg">
-                                        <p class="news__date">Nov 23, 2018</p>
-                                    </figure></a>
-                                <h3><a href="news/view.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
-                                <p class="news__intro">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-                                </p>
-                            </li>
-                            <li>
-                                <a href="news/view.html"><figure class="lazy image-article" data-src="img/news/news-3.jpg">
-                                        <p class="news__date">Nov 23, 2018</p>
-                                    </figure></a>
-                                <h3><a href="news/view.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
-                                <p class="news__intro">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-                                </p>
-                            </li>
-                            <li>
-                                <a href="news/view.html"><figure class="lazy image-article" data-src="img/news/news-1.jpg">
-                                        <p class="news__date">Nov 23, 2018</p>
-                                    </figure></a>
-                                <h3><a href="news/view.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
-                                <p class="news__intro">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="gallery">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="gallery__inner">
-                            <div class="gallery__left">
-                                <div class="gallery__title">Bộ sưu tập</div>
+                        <div class="headline">
+                            <h2 class="headline-default news__headline wp1"><span>Tin tức</span></h2>
+                            <div class="headline-intro"><span>Mô tả</span></div>
+                        </div>
+                        <div class="news__inner">
+                            <div class="news__item news__item--first wp2">
+                                <div class="news__item--right">
+                                    <a href="/news/view.html"><figure class="news__image lazy" data-src="img/banner-1.jpg"></figure></a>
+                                </div>
+                                <div class="news__item--left">
+                                    <h3 class="news__title"><a href="#">Tin tức 1</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <a class="news__button--more" href="#">Xem thêm <i class="fa fa-angle-right"></i></a>
+                                </div>
                             </div>
-                            <div class="gallery__right">
-                                <ul class="gallery-slider owl-carousel owl-theme">
-                                    <li class="gallery__item" img="img/gallery/gallery-1.jpg">
-                                        <figure class="lazy gallery__image" data-src="img/gallery/gallery-1.jpg">
-                                            <div class="overlay">
-                                                <i class="fa fa-picture-o"></i>
-                                            </div>
-                                        </figure>
-                                    </li>
-                                    <li class="gallery__item" img="img/gallery/gallery-2.jpg">
-                                        <figure class="lazy gallery__image" data-src="img/gallery/gallery-2.jpg">
-                                            <div class="overlay">
-                                                <i class="fa fa-picture-o"></i>
-                                            </div>
-                                        </figure>
-                                    </li> 
-                                    <li class="gallery__item" img="img/gallery/gallery-3.jpg">
-                                        <figure class="lazy gallery__image" data-src="img/gallery/gallery-3.jpg">
-                                            <div class="overlay">
-                                                <i class="fa fa-picture-o"></i>
-                                            </div>
-                                        </figure>
-                                    </li> 
-                                    <li class="gallery__item" img="img/gallery/gallery-2.jpg">
-                                        <figure class="lazy gallery__image" data-src="img/gallery/gallery-2.jpg">
-                                            <div class="overlay">
-                                                <i class="fa fa-picture-o"></i>
-                                            </div>
-                                        </figure>
-                                    </li> 
-                                    <li class="gallery__item" img="img/gallery/gallery-2.jpg">
-                                        <figure class="lazy gallery__image" data-src="img/gallery/gallery-2.jpg">
-                                            <div class="overlay">
-                                                <i class="fa fa-picture-o"></i>
-                                            </div>
-                                        </figure>
-                                    </li> 
-                                </ul>
+                            <div class="news__slider owl-carousel owl-theme">
+                                <div class="news__item">
+                                    <div class="news__item--right">
+                                        <a href="#">
+                                            <figure class="news__image lazy" data-src="img/intro.jpg">
+                                                <div class="news__item--info">
+                                                    <div class="news__button">
+                                                        <a class="btn-default1" href="#">Xem thêm</i></a>
+                                                    </div>
+                                                </div>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="news__item--left">
+                                        <h3 class="news__title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h3>
+
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <div class="news__item--right">
+                                        <a href="#">
+                                            <figure class="news__image lazy" data-src="img/banner-6.jpg">
+                                                <div class="news__item--info">
+                                                    <div class="news__button">
+                                                        <a class="btn-default1" href="#">Xem thêm</i></a>
+                                                    </div>
+                                                </div>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="news__item--left">
+                                        <h3 class="news__title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h3>
+
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <div class="news__item--right">
+                                        <a href="#">
+                                            <figure class="news__image lazy" data-src="img/banner-7.jpg">
+                                                <div class="news__item--info">
+                                                    <div class="news__button">
+                                                        <a class="btn-default1" href="#">Xem thêm</i></a>
+                                                    </div>
+                                                </div>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="news__item--left">
+                                        <h3 class="news__title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h3>
+
+                                    </div>
+                                </div>
+                                <div class="news__item">
+                                    <div class="news__item--right">
+                                        <a href="#">
+                                            <figure class="news__image lazy" data-src="img/banner-5.jpg">
+                                                <div class="news__item--info">
+                                                    <div class="news__button">
+                                                        <a class="btn-default1" href="#">Xem thêm</i></a>
+                                                    </div>
+                                                </div>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="news__item--left">
+                                        <h3 class="news__title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h3>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="modal fade" id="galleryModal" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-body"></div>
+        <section class="form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form__inner">
+                            <div class="form__left">
+                                <h2 class="headline-default"><span>Liên hệ với chúng tôi</span></h2>
+                                <div class="headline-intro"><span>Để lại thông tin để được hỗ trợ</span></div>
+                            </div>
+                            <div class="form__right">
+                                <form class="form__register" data-parsley-validate novalidate>
+                                    <div>
+                                        <input class="email" type="text" data-parsley-type="email" required="required" data-parsley-error-message="Email không được để trống" placeholder="Email *" />
+                                    </div>
+                                    <div>
+                                        <input class="phone" type="text" data-parsley-type="digits" data-parsley-length="[10,11]" required="required" data-parsley-error-message="Số điện thoại không được để trống" placeholder="Số điện thoại *" />
+                                    </div>
+                                    <div>
+                                        <button type="submit">Gửi</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <footer>
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <ul class="f1">
+        </section>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer__inner">
+                            <ul class="footer__top">                                    
                                 <li>
-                                    <a class="logo" href="/">
-                                        <img src="img/logo.png" />
-                                    </a>
+                                    <img src="img/logovh.png" alt="Fashion" />
                                     <div class="footer__content">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </div>
                                 </li>
                                 <li>
-                                    <h3 class="footer__title">Về chúng tôi</h3>
+                                    <h3 class="footer__title">Tiêu đề 1</h3>
                                     <div class="footer__content">
-                                        <ul>
-                                            <li><a href="#">Liên hệ</a></li>
-                                            <li><a href="#">Giới thiệu</a></li>
-                                            <li><a href="#">Hỗ trợ</a></li>
-                                        </ul>
-                                    </div>
-                                <li>
-                                    <h3 class="footer__title">Chính sách</h3>
-                                    <div class="footer__content">
-                                        <ul>
-                                            <li><a href="#">Giao hàng</a></li>
-                                            <li><a href="#">Đổi trả hàng</a></li>
-                                            <li><a href="#">Hoàn tiền</a></li>
-                                        </ul>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </div>
                                 </li>
                                 <li>
-                                    <h3 class="footer__title">Địa chỉ shop</h3>
+                                    <h3 class="footer__title">Tiêu đề 2</h3>
                                     <div class="footer__content">
-                                        Số 17, Phùng Khoang 2, Nam Từ Liêm, Hà Nội
+                                        <ul>
+                                            <li><a href="#">Đường dẫn 1</a></li>
+                                            <li><a href="#">Đường dẫn 2</a></li>
+                                            <li><a href="#">Đường dẫn 3</a></li>
+                                            <li><a href="#">Đường dẫn 4</a></li>
+                                        </ul>
                                     </div>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="footer-copyright__inner">
-                                <p>20018 @ Copyright</p>
-
-                                <ul class="social">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-                                </ul>
+                            <div class="footer__bottom">
+                                <div class="footer__social">
+                                    <a class="icon-social-youtube icons" href="#"></a>
+                                    <a class="icon-social-facebook icons" href="#"></a>
+                                    <a class="icon-social-twitter icons" href="#"></a>
+                                    <a class="icon-social-instagram icons" href="#"></a>
+                                    <a class="icon-social-pinterest icons" href="#"></a>
+                                </div>
+                                <div class="footer__copyright">
+                                    Design by <a href="http://dweb.vn">DWEB.VN</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </body>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.lazy.min.js"></script>

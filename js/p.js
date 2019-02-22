@@ -1,9 +1,9 @@
 $(function(){
     $('#listImgZoom_2').carouFredSel({
-        items: 4,
+        items: 5,
         easing:'linear',
-        height: 435,
-        width: '100%',
+        height: 540,
+        width: 70,
         duration: 200,
         direction: "up",
         scroll: {
@@ -71,14 +71,14 @@ $(function(){
         addToCart(products, 1, function(rs){
             $('.totalCart').find('span').text(rs.data['totalProducts']);
 //            if(rs.status == 1){
-            $('#myModal').modal('show');
-            $.post('/cart/index', {template: 'order/cart/product', terminal: true},function(r){
-                $('#myModal .modal-body').empty().append(r);
-                $.getScript(updateCart());
-            });
-            $.post('/cart/index', {template: 'order/cart/cart-mini', terminal: true},function(r){
-                $('.head .cart').empty().append(r);
-            });
+                $('#myModal').modal('show');
+                $.post('/cart/index', {template: 'order/cart/product', terminal: true},function(r){
+                    $('#myModal .modal-body').empty().append(r);
+                    $.getScript(updateCart());
+                });
+                $.post('/cart/index', {template: 'order/cart/cart-mini', terminal: true},function(r){
+                    $('.head .cart').empty().append(r);
+                });
 //            }
         });
 
@@ -96,7 +96,7 @@ $(function(){
     });
 
     $('.detailPayorder>div').click(function(){
-        var t = $(this);
+         var t = $(this);
         if(!t.hasClass('active')){
             $('.detailPayorder>div').removeClass('active');
             $('.detailPayorder>div>div').slideUp();
@@ -110,24 +110,16 @@ $(function(){
 
 //    function loadImages(){
 //        function owl(){
-
-    $("#product").owlCarousel({
-        items: 1,
-        singleItem: true,
-        nav: true,
-        dots: true,
-        transitionStyle:"fade",
-        navText: [
-            "<i class='fa fa-angle-left'></i>",
-            "<i class='fa fa-angle-right'></i>"
-        ],
-        scroll: {
-            items: 1,
-            visible: true,
-            duration: 400,
-        }
-
-    });
+            $("#product").owlCarousel({
+                items: 1,
+                singleItem: true,
+                nav: true,
+                dots: false,
+                navText: [
+                    "<i class='fa fa-angle-left'></i>",
+                    "<i class='fa fa-angle-right'></i>"
+                ]
+            });
 //        }
 //
 //        var viewLink = $('#viewLink').val();
@@ -140,6 +132,7 @@ $(function(){
 //    }
 //    setInterval(loadImages(), 5000);
 
+
     function updateCart(){
 
         $('.changeQuantity').change(function(){
@@ -150,7 +143,7 @@ $(function(){
                 dataQuantity: $(this).find(':selected').text()
             },function(r){
                 if(r.code == 0){
-                    alert('Chúng tôi không tìm th?y s?n ph?m này');
+                    alert('Chúng tôi không tìm thấy sản phẩm này');
                 }else{
                     $.post('/cart/index', {template: 'order/cart/product', terminal: true},function(r){
                         $('#myModal .modal-body').empty().append(r);
@@ -202,4 +195,5 @@ $(function(){
             hide = true;
         });
     }
+
 });

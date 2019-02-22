@@ -1,4 +1,5 @@
 $(function(){
+
     $('.changeQuantity').change(function(){
         $.post('/cart/change',{
             dataId: $(this).attr('data-id'),
