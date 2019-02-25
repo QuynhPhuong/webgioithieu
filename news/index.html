@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <title>Trang chủ</title>
+        <title>Trang tin tức</title>
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"> 
         <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
         <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"> 
@@ -23,20 +23,24 @@
                     <div class="col-sm-12">
                         <div class="head__inner">
                             <div class="logo">
-                                <a href="#">
-                                    <img src="../img/logovh.png" alt="Fashion" />
+                                <a href="../index.html">
+                                    <img src="../img/logovh.png" alt="Bất động sản" />
                                 </a>
                             </div>
                             <div class="navHome">
                                 <ul>
                                     <li class="active"><a href="../index.html">Trang chủ</a></li>
                                     <li><a href="#">Tin tức</a>
-                                        <ul>
+                                        <ul class="navHome__list">
                                             <li><a href="#">Bất động sản</a></li>
-                                            <li><a href="#">Thời trang</a></li>
-                                            <li><a href="#">Ẩm thực</a></li>
-                                            <li><a href="#">Làm đẹp</a></li>
-                                            <li><a href="#">Văn hóa</a></li>
+                                            <li><a href="#">Thời trang</a>
+                                                <ul>
+                                                    <li><a href="#">Thời trang 1</a></li>
+                                                    <li><a href="#">Thời trang 2</a></li>
+                                                    <li><a href="#">Thời trang 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Ẩm thực</a></li>S
                                         </ul>
                                     </li>
                                     <li><a href="../pages/contact.html">Liên hệ</a></li>
@@ -46,16 +50,22 @@
                             <a class="navigation-button">Menu</a>
                             <div class="navigation-mobile">
                                 <ul class="navigation-mobile__list">
-                                    <li><a href="#">Trang chủ</a></li>
-                                        <li><a href="#">Tin tức</a>
-                                            <ul>
-                                                <li><a href="#">Bất động sản</a></li>
-                                                <li><a href="#">Thời trang</a></li>
-                                                <li><a href="#">Ẩm thực</a></li>
-                                                <li><a href="#">Làm đẹp</a></li>
-                                                <li><a href="#">Văn hóa</a></li>
-                                            </ul>
-                                        </li>
+                                    <li><a href="../index.html">Trang chủ</a></li>
+                                    <li><button></button><a href="#">Tin tức</a>
+                                        <ul class="nav2">
+                                            <li><a href="#">Bất động sản</a></li>
+                                            <li><button></button><a href="#">Thời trang</a>
+                                                <ul>
+                                                    <li><a href="#">Thời trang 1</a></li>
+                                                    <li><a href="#">Thời trang 2</a></li>
+                                                    <li><a href="#">Thời trang 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Ẩm thực</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../pages/contact.html">Liên hệ</a></li>
+                                    <li><a href="../pages/index.html">Giới thiệu</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -206,8 +216,6 @@
                                 <h3 class="sidebar__title">Tìm kiếm</h3>
                                 <form id="search" action="/search" method="get">
                                     <input type="text" name="q" placeholder="Tìm kiếm ..."/>
-                                   <!-- <a class="icon-font icon-magnifier" onclick="document.getElementById('search').submit();"></a>-->
-                                    <div id="searchFolding"></div>
                                 </form>
                             </div>
                             <div class="sidebar__box">
